@@ -1,3 +1,21 @@
 .pill-button {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFF;
+    width: 146px;
+    border-radius: 100px;
+    padding: 8px;
+}
+
+.pill-button__text {
+    opacity: .5;
+    letter-spacing: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 13px;
+}
+
+.chevron {
+    rotate: 180deg;
 }
