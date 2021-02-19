@@ -1,7 +1,8 @@
 @import "./reset.css";
 @import "./fonts.css";
 
-body {
+#root {
+	height: 100vh;
 	padding: 100px;
 	background-color: #303030;
 	font-family: "Inter", sans-serif;
