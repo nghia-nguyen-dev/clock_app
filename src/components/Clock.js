@@ -1,5 +1,5 @@
 import React from "react";
-import '../css/Clock.css'
+import "../css/Clock.css";
 
 const options = {
 	hour: "2-digit",
@@ -24,7 +24,6 @@ class Clock extends React.Component {
 		this.setState({
 			time: this.getTime(0),
 			timeZone: this.getTime(2),
-			timeOfDay: this.getTime(1),
 		});
 	}
 
@@ -35,9 +34,8 @@ class Clock extends React.Component {
 	render() {
 		return (
 			<div className="clock">
-                <h1 className="clock__time">{this.state.time}</h1>
-				{this.state.timeZone}
-				{this.state.timeOfDay}
+				<h1 className="clock__time">{this.state.time}</h1>
+				<p className="clock__time-zone">{this.state.timeZone}</p>
 			</div>
 		);
 	}
