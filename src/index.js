@@ -7,7 +7,7 @@ import "./css/index.css";
 const App = () => {
 	return (
         <div>
-            <PillButton />
+            <PillButton text="more"/>
         </div>
     )
 };
