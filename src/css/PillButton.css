@@ -1,3 +1,30 @@
 .pill-button {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFF;
+    width: 146px;
+    border-radius: 100px;
+    padding: 8px 8px 8px 14px;
+    cursor: pointer;
 }
+
+.chevron circle {
+    transition: fill .2s linear;
+}
+
+.pill-button:hover .chevron circle {
+    fill: #999999;
+}
+
+.pill-button__text {
+    opacity: .5;
+    letter-spacing: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.chevron {
+    rotate: 180deg;
+}
+

@@ -2,5 +2,7 @@
 @import "./fonts.css";
 
 body {
+	padding: 100px;
+	background-color: #303030;
 	font-family: "Inter", sans-serif;
 }

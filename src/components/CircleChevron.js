@@ -1,8 +1,8 @@
 import React from "react";
 
-const CircleChevron = () => {
+const CircleChevron = (props) => {
 	return (
-		<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+		<svg className={props.className}  width="40" height="40" xmlns="http://www.w3.org/2000/svg">
 			<g fill="none" fill-rule="evenodd">
 				<circle fill="#303030" cx="20" cy="20" r="20" />
 				<path stroke="#FFF" stroke-width="2" d="M14 23l6-6 6 6" />

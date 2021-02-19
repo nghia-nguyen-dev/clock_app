@@ -6,8 +6,8 @@ class PillButton extends React.Component {
 	render() {
 		return (
 			<div className="pill-button">
-				<p>More</p>
-				<CircleChevron />
+				<p className="pill-button__text">More</p>
+				<CircleChevron className="chevron" />
 			</div>
 		);
 	}
