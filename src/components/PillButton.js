@@ -1,5 +1,5 @@
 import React from "react";
-import CircleButton from './CircleButton';
+import CircleChevron from './CircleChevron';
 
 
 class PillButton extends React.Component {
@@ -7,7 +7,7 @@ class PillButton extends React.Component {
 		return (
 			<div className="pill-button">
 				<p>More</p>
-				<CircleButton />
+				<CircleChevron />
 			</div>
 		);
 	}
