@@ -1,5 +1,6 @@
-@import './reset.css';
+@import "./reset.css";
+@import "./fonts.css";
 
 body {
-    background-color: aliceblue;
+	font-family: "Inter", sans-serif;
 }
