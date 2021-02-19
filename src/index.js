@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import PillButton from './components/PillButton';
-import Clock from './components/Clock'
+import Widget from './components/Widget'
 
 import "./css/index.css";
 
@@ -9,7 +9,7 @@ const App = () => {
 	return (
         <div className="app">
             <PillButton text="more"/>
-            <Clock />
+            <Widget />
         </div>
     )
 };
