@@ -1,6 +1,17 @@
+.clock {
+    color: #FFF;
+    display: flex;
+}
+
 .clock__time {
     letter-spacing: -5px;
     font-size: 200px;
     font-weight: 700;
-    color: white;
 }
+
+.clock__time-zone {
+    align-self: end;
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+
