@@ -1,10 +1,13 @@
-import React from 'react';
-import Clock from './Clock';
+import React from "react";
+import Clock from "./Clock";
 
 const Widget = () => {
-    return(
-        <Clock />
-    )
-}
+	return (
+		<div className="widget">
+			<GreetingMsg />
+			<Clock />
+		</div>
+	);
+};
 
-export default Widget
+export default Widget;
