@@ -6,7 +6,7 @@ import "./css/index.css";
 
 const App = () => {
 	return (
-        <div>
+        <div className="app">
             <PillButton text="more"/>
         </div>
     )
