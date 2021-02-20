@@ -1,12 +1,12 @@
 import React from "react";
 import Clock from "./Clock";
-import UserLocation from './UserLocation'
+import UserLocation from "./UserLocation";
 
 const Widget = () => {
 	return (
 		<div className="widget">
 			<Clock />
-            <UserLocation />
+			<UserLocation />
 		</div>
 	);
 };

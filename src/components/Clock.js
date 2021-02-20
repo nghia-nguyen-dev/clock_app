@@ -36,7 +36,7 @@ class Clock extends React.Component {
 	render() {
 		return (
 			<div>
-                <GreetingMsg timeOfDay={this.state.timeOfDay}/>
+				<GreetingMsg timeOfDay={this.state.timeOfDay} />
 				<div className="clock">
 					<h1 className="clock__time">{this.state.time}</h1>
 					<p className="clock__time-zone">{this.state.timeZone}</p>
