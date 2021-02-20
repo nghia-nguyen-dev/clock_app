@@ -1,4 +1,5 @@
 import React from "react";
+import '../css/Quote.css'
 
 class Quote extends React.Component {
 	state = {
