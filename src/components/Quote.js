@@ -10,7 +10,10 @@ class Quote extends React.Component {
 		fetch("https://api.quotable.io/random")
 			.then((res) => res.json())
 			.then((data) => {
-				this.setState({ author: data.author, content: data.content });
+				this.setState({
+					author: data.author,
+					content: data.content,
+				});
 			})
 			.catch((err) => console.log(err));
 	}
