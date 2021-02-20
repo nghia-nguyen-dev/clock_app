@@ -28,21 +28,17 @@ function getGreeting(hour) {
 	}
 }
 
-class GreetingMsg extends React.Component {
-	state = {
-		greeting: getGreeting(new Date().getHours()),
-	};
+function GreetingMsg() {
 
-	render() {
-		return (
-			<div className="greeting-msg">
-				{this.state.greeting.icon}
-				<p className="greeting-msg__text">
-					{this.state.greeting.message}, It's currently
-				</p>
-			</div>
-		);
-	}
+	return (
+		<div className="greeting-msg">
+			{getGreeting(new Date().getHours()).icon}
+			<p className="greeting-msg__text">
+				{getGreeting(new Date().getHours()).message}, It's currently
+			</p>
+		</div>
+	);
+    
 }
 
 export default GreetingMsg;
