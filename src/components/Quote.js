@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/Quote.css";
+import Refresh from "../components/icons/Refresh";
 
 class Quote extends React.Component {
 	state = {
@@ -22,8 +23,11 @@ class Quote extends React.Component {
 	render() {
 		return (
 			<div className="quote">
-				<p className="quote__content">{this.state.content}</p>
-				<p className="quote__author">{this.state.author}</p>
+				<div className="quote__text">
+					<p className="quote__content">{this.state.content}</p>
+					<p className="quote__author">{this.state.author}</p>
+				</div>
+				<Refresh className="quote__refresh-icon"/>
 			</div>
 		);
 	}
