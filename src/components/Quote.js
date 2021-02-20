@@ -1,5 +1,5 @@
 import React from "react";
-import '../css/Quote.css'
+import "../css/Quote.css";
 
 class Quote extends React.Component {
 	state = {
@@ -22,8 +22,8 @@ class Quote extends React.Component {
 	render() {
 		return (
 			<div className="quote">
-				{this.state.content}
-				{this.state.author}
+				<p className="quote__content">{this.state.content}</p>
+				<p className="quote__author">{this.state.author}</p>
 			</div>
 		);
 	}
