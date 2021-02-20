@@ -1,4 +1,5 @@
 import React from "react";
+import '../css/UserLocation.css';
 
 class UserLocation extends React.Component {
 	state = {
@@ -19,7 +20,7 @@ class UserLocation extends React.Component {
 	}
 
 	render() {
-		return <div>{this.state.location}</div>;
+		return <div className="user-location">{this.state.location}</div>;
 	}
 }
 
