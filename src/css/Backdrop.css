@@ -1,0 +1,6 @@
+.backdrop__image--night {
+    background-image: url('../assets/desktop/bg-image-nighttime.jpg');
+}
+.backdrop__image--day {
+    background-image: url('../assets/desktop/bg-image-daytime.jpg');
+}
