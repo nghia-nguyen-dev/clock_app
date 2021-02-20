@@ -1,35 +1,45 @@
 import React from "react";
 import Sun from "./icons/Sun";
 import Moon from "./icons/Moon";
-import '../css/GreetingMsg.css'
+import "../css/GreetingMsg.css";
 
-const greetingConfig = {
-	beforeNoon: {
+const greetings = {
+	morning: {
 		message: "Good morning",
 		icon: <Sun />,
 	},
-	afterNoon: {
+	afternoon: {
+		message: "Good afternoon",
+		icon: <Sun />,
+	},
+	evening: {
 		message: "Good evening",
 		icon: <Moon />,
 	},
 };
 
-function chooseGreeting(timeOfDay) {
-	return timeOfDay === "PM"
-		? greetingConfig.afterNoon
-		: greetingConfig.beforeNoon;
+function getGreeting(hour) {
+	if (hour < 12) {
+		return greetings.morning;
+	} else if (hour < 18) {
+		return greetings.afternoon;
+	} else {
+		return greetings.evening;
+	}
 }
 
 class GreetingMsg extends React.Component {
 	state = {
-		timeOfDay: this.props.timeOfDay,
+		greeting: getGreeting(new Date().getHours()),
 	};
 
 	render() {
 		return (
 			<div className="greeting-msg">
-				{chooseGreeting(this.state.timeOfDay).icon}
-				<p className="greeting-msg__text">{chooseGreeting(this.state.timeOfDay).message}, It's currently</p>
+				{this.state.greeting.icon}
+				<p className="greeting-msg__text">
+					{this.state.greeting.message}, It's currently
+				</p>
 			</div>
 		);
 	}
