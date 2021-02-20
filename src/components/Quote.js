@@ -41,7 +41,7 @@ class Quote extends React.Component {
 			<div className="quote">
 				<div className="quote__text">
 					<p className="quote__content">{this.state.content}</p>
-					<p className="quote__author">{this.state.author}</p>
+					<p className="quote__author"><span>—</span>{this.state.author}</p>
 				</div>
 				<Refresh
 					className="quote__refresh-icon"
