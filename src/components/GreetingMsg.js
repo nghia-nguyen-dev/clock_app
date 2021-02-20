@@ -29,7 +29,7 @@ class GreetingMsg extends React.Component {
 		return (
 			<div className="greeting-msg">
 				{chooseGreeting(this.state.timeOfDay).icon}
-				<p className="greeting-msg__text">{chooseGreeting(this.state.timeOfDay).message}</p>
+				<p className="greeting-msg__text">{chooseGreeting(this.state.timeOfDay).message}, It's currently</p>
 			</div>
 		);
 	}
