@@ -13,8 +13,15 @@
 
 .quote__author {
 	font-weight: 700;
+    margin-top: 28px;
+}
+
+.quote__author span {
+    font-weight: 400;
+    margin-right: 10px;
 }
 
 .quote__refresh-icon {
 	margin-top: 6px;
+    cursor: pointer;
 }
