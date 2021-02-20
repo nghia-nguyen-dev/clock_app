@@ -14,7 +14,9 @@ const greetingConfig = {
 };
 
 function chooseGreeting(timeOfDay) {
-    return timeOfDay === 'PM' ? greetingConfig.afterNoon : greetingConfig.beforeNoon 
+	return timeOfDay === "PM"
+		? greetingConfig.afterNoon
+		: greetingConfig.beforeNoon;
 }
 
 class GreetingMsg extends React.Component {
@@ -25,8 +27,8 @@ class GreetingMsg extends React.Component {
 	render() {
 		return (
 			<div className="greeting-msg">
-                {chooseGreeting(this.state.timeOfDay).icon}
-                <p>{chooseGreeting(this.state.timeOfDay).message}</p>
+				{chooseGreeting(this.state.timeOfDay).icon}
+				<p>{chooseGreeting(this.state.timeOfDay).message}</p>
 			</div>
 		);
 	}
