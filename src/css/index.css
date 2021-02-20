@@ -3,12 +3,12 @@
 
 #root {
 	height: 100vh;
-	padding: 110px 80px 60px ;
 	background-color: #303030;
 	font-family: "Inter", sans-serif;
 }
 
 .app {
+	padding: 110px 80px 60px ;
     height: 100%;
     display: flex;
     flex-direction: column;
