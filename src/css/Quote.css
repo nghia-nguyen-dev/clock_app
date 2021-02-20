@@ -1,0 +1,20 @@
+.quote {
+	display: flex;
+}
+
+.quote__text {
+	color: #fff;
+	font-size: 18px;
+	line-height: 28px;
+
+	width: 500px;
+	margin-right: 30px;
+}
+
+.quote__author {
+	font-weight: 700;
+}
+
+.quote__refresh-icon {
+	margin-top: 6px;
+}
