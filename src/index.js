@@ -13,6 +13,7 @@ const App = () => {
             <Backdrop />
             <Quote />
             <Widget />
+            <PillButton text="more"/>
         </div>
     )
 };
