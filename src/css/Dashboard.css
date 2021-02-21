@@ -1,0 +1,10 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: darkcyan;
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    bottom: 0%;
+    /* transform: translateY(100%); */
+}
