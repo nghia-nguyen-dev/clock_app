@@ -1,6 +1,30 @@
+.backdrop {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+	left: 0;
+}
+
+.backdrop__image {
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	z-index: -2;
+}
+
+.backdrop__opacity-layer {
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	z-index: -1;
+    background-color: black;
+    opacity: .55;
+}
+
 .backdrop__image--night {
-    background-image: url('../assets/desktop/bg-image-nighttime.jpg');
+	background-image: url("../assets/desktop/bg-image-nighttime.jpg");
 }
 .backdrop__image--day {
-    background-image: url('../assets/desktop/bg-image-daytime.jpg');
+	background-image: url("../assets/desktop/bg-image-daytime.jpg");
 }
