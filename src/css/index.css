@@ -18,3 +18,11 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+.container {
+    transition: transform .6s ease-in;
+}
+
+.container.open {
+    transform: translateY(-50vh);
+}
