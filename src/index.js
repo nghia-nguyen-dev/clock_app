@@ -33,6 +33,7 @@ class App extends React.Component {
 						<div>
 							<Widget />
 							<PillButton
+                                class={this.state.isDashboardOpen ? 'rotate': ''}
 								text={this.state.isDashboardOpen ? 'less': 'more'}
 								handleClick={this.handleClick}
 							/>
