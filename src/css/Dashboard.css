@@ -2,13 +2,8 @@
     gap: 30px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	width: 100vw;
 	height: 50vh;
 	padding-top: 75px;
-	transform: translateY(100%);
-	position: absolute;
-	left: 0;
-	bottom: 0;
 	padding-left: 80px;
 }
 
