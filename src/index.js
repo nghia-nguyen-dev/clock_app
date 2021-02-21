@@ -9,22 +9,40 @@ import Dashboard from "./components/Dashboard";
 import "./css/index.css";
 import Clock from "./components/Clock";
 
-const App = () => {
-	return (
-		<div className="app">
-			<Backdrop />
-			<div className="container">
-				<div className="widgets">
-					<Quote />
-					<div>
-						<Widget />
-						<PillButton text="more" />
+class App extends React.Component {
+	state = {
+		isDashboardOpen: false,
+	};
+
+	handleClick = () => {
+		console.log(this);
+		this.setState({ isDashboardOpen: !this.state.isDashboardOpen });
+	};
+
+	render() {
+		return (
+			<div className="app">
+				<Backdrop />
+				<div
+					className={`container ${
+						this.state.isDashboardOpen ? "open" : ""
+					}`}
+				>
+					<div className="widgets">
+						<Quote />
+						<div>
+							<Widget />
+							<PillButton
+								text="more"
+								handleClick={this.handleClick}
+							/>
+						</div>
 					</div>
+					<Dashboard />
 				</div>
-				<Dashboard />
 			</div>
-		</div>
-	);
-};
+		);
+	}
+}
 
 ReactDOM.render(<App />, document.querySelector("#root"));
