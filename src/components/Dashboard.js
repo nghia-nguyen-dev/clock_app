@@ -1,6 +1,10 @@
 import React from "react";
 import "../css/Dashboard.css";
 
+function getTheme(hr) {
+    return hr < 18 ? 'dashboard--day' : 'dashboard--night'
+}
+
 class Dashboard extends React.Component {
 	state = {
         time:null,
@@ -26,22 +30,22 @@ class Dashboard extends React.Component {
 
 	render() {
 		return (
-			<div className="dashboard">
+			<div className={`dashboard ${getTheme(parseInt(this.state.time))}`}>
 				<div className="timezone">
 					<p>current timezone</p>
-					<p className="timezone__data">{this.state.timezone}</p>
+					<h3>{this.state.timezone}</h3>
 				</div>
 				<div className="day-of-yr">
 					<p>day of the year</p>
-					<p className="day-of-yr__data">{this.state.dayOfYr}</p>
+					<h3>{this.state.dayOfYr}</h3>
 				</div>
 				<div className="day-of-wk">
 					<p>day of the week</p>
-					<p className="day-of-wk__data">{this.state.dayOfWk}</p>
+					<h3>{this.state.dayOfWk}</h3>
 				</div>
 				<div className="wk-number">
 					<p>week number</p>
-					<p className="wk-number__data">{this.state.wkNumber}</p>
+					<h3>{this.state.wkNumber}</h3>
 				</div>
 			</div>
 		);

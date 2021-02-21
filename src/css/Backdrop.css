@@ -21,7 +21,7 @@
 	width: 100%;
 	z-index: -1;
     background-color: black;
-    opacity: .55;
+    opacity: .4;
 }
 
 .backdrop__image--night {

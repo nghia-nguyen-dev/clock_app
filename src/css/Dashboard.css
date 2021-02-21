@@ -1,10 +1,28 @@
 .dashboard {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: darkcyan;
-    position: absolute;
-    width: 100vw;
-    left: 0;
-    bottom: 0%;
-    /* transform: translateY(100%); */
+    gap: 30px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 100vw;
+	height: 50vh;
+	padding-top: 75px;
+	transform: translateY(100%);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding-left: 80px;
+}
+
+.dashboard--night {
+	background-color: hsla(0, 0%, 0%, 0.45);
+	color: #fff;
+}
+.dashboard--day {
+    color: #303030;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.dashboard h3 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-top: 4px;
 }

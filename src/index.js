@@ -14,8 +14,8 @@ const App = () => {
             <Backdrop />
             <Quote />
             <Widget />
+            {/* <PillButton text="more"/> */}
             <Dashboard />
-            <PillButton text="more"/>
         </div>
     )
 };
