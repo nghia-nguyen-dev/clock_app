@@ -4,6 +4,7 @@ import Widget from './components/Widget'
 import PillButton from './components/PillButton';
 import Quote from './components/Quote'
 import Backdrop from './components/Backdrop'
+import Dashboard from './components/Dashboard'
 
 import "./css/index.css";
 
@@ -13,6 +14,7 @@ const App = () => {
             <Backdrop />
             <Quote />
             <Widget />
+            <Dashboard />
             <PillButton text="more"/>
         </div>
     )
