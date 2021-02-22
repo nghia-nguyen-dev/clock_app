@@ -30,7 +30,7 @@ class App extends React.Component {
 				>
 					<div className="widgets">
 						<Quote />
-						<div>
+						<div className="flex-grp">
 							<Widget />
 							<PillButton
                                 class={this.state.isDashboardOpen ? 'rotate': ''}
