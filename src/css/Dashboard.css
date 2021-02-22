@@ -1,7 +1,7 @@
 .dashboard {
     gap: 30px;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 5fr 3fr;
 	height: 50vh;
 	padding-top: 75px;
 	padding-left: 80px;
