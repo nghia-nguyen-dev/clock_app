@@ -26,10 +26,10 @@
 }
 
 .chevron {
-    transition: rotate .35s linear;
+    transition: transform .35s linear;
 }
 
 .chevron.rotate {
-    rotate: 180deg;
+    transform: rotate(180deg);
 }
 

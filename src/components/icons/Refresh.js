@@ -1,4 +1,5 @@
 import React from "react";
+import '../../css/Refresh.css'
 
 const Refresh = (props) => {
 	return (
