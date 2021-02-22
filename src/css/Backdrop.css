@@ -27,6 +27,11 @@
 .backdrop__image--night {
 	background-image: url("../assets/desktop/night.jpg");
 }
+
+.backdrop__image--afternoon {
+	background-image: url("../assets/desktop/afternoon.jpg");
+}
+
 .backdrop__image--day {
 	background-image: url("../assets/desktop/morning.jpg");
 }
