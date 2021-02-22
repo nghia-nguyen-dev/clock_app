@@ -15,7 +15,7 @@ class Dashboard extends React.Component {
 	};
 
 	componentDidMount() {
-        fetch("http://worldtimeapi.org/api/ip")
+        fetch("https://worldtimeapi.org/api/ip")
             .then(res => res.json())
             .then(data => {
                 this.setState({
