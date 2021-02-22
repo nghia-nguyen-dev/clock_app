@@ -21,12 +21,12 @@
 	width: 100%;
 	z-index: -1;
     background-color: black;
-    opacity: .4;
+    opacity: .35;
 }
 
 .backdrop__image--night {
-	background-image: url("../assets/desktop/bg-image-nighttime.jpg");
+	background-image: url("../assets/desktop/night.jpg");
 }
 .backdrop__image--day {
-	background-image: url("../assets/desktop/bg-image-daytime.jpg");
+	background-image: url("../assets/desktop/morning.jpg");
 }
