@@ -33,8 +33,12 @@ class App extends React.Component {
 						<div className="flex-grp">
 							<Widget />
 							<PillButton
-                                class={this.state.isDashboardOpen ? 'rotate': ''}
-								text={this.state.isDashboardOpen ? 'less': 'more'}
+								class={
+									this.state.isDashboardOpen ? "rotate" : ""
+								}
+								text={
+									this.state.isDashboardOpen ? "less" : "more"
+								}
 								handleClick={this.handleClick}
 							/>
 						</div>
