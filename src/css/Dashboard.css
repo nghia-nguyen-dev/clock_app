@@ -5,6 +5,7 @@
 	height: 50vh;
 	padding-top: 75px;
 	padding-left: 80px;
+    backdrop-filter: blur(10px);
 }
 
 .dashboard--night {
