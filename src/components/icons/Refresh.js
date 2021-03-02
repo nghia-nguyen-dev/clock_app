@@ -9,10 +9,10 @@ const Refresh = (props) => {
 			ref={iconRef}
 			onClick={() => {
 				props.getQuote();
-				iconRef.current.classList.add('spin')
+				iconRef.current.classList.add("spin");
 			}}
 			onTransitionEnd={() => {
-				iconRef.current.classList.remove('spin')
+				iconRef.current.classList.remove("spin");
 			}}
 			className={props.className}
 			width="18"
