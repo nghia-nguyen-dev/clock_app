@@ -1,3 +1,8 @@
 .quote__refresh-icon:hover path {
     opacity: 1;
 }
+
+.quote__refresh-icon.spin {
+    transition: transform .6s ease-in-out;
+    transform: rotate(180deg);
+}
