@@ -1,0 +1,42 @@
+@media (min-width: 1920px) {
+	.widgets {
+		padding: 140px;
+	}
+
+	.dashboard {
+		padding: 100px 140px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.clock__time {
+		font-size: 140px;
+		line-height: 102px;
+	}
+	.clock__time-zone {
+		font-size: 24px;
+		line-height: 18px;
+	}
+   .clock {
+      max-width: max-content;
+   }
+   .clock__time {
+      letter-spacing: -2px;
+   }
+
+   .user-location {
+      line-height: 19px;
+   }
+
+   .dashboard h3 {
+      font-size: 40px;
+   }
+
+   .dashboard {
+      gap: 20px;
+   }
+
+   .widgets {
+      padding: 60px;
+   }
+}

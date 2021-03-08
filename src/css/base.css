@@ -1,0 +1,31 @@
+#root {
+   height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+.app {
+   height: 100vh;
+   overflow: hidden;
+}
+
+.widgets {
+   height: 100vh;
+   padding: 80px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.container {
+   transition: transform .6s ease-in;
+}
+
+.container.open {
+   transform: translateY(-50vh);
+}
+
+.flex-grp {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+}
